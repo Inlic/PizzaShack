@@ -13,6 +13,8 @@ namespace PizzaShack.Models
   public class Pizza
   {
     private decimal _BasePrice = 6;
+
+    public string Name { get; set; }
     public List<Topping> Toppings { get; set; }
     public PizzaSizes Size { get; set; }
 
