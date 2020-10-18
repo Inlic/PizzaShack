@@ -9,6 +9,9 @@ namespace PizzaShack.Models
       Name = name;
       Price = price;
     }
+    public Topping()
+    {
 
+    }
   }
 }
