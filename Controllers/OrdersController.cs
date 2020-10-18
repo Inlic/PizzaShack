@@ -7,14 +7,12 @@ namespace PizzaShack.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
-  public class PizzasController : ControllerBase
+  public class OrdersController : ControllerBase
   {
     [HttpGet]
-    public ActionResult<IEnumerable<Pizza>> Get()
+    public ActionResult<IEnumerable<Order>> Get()
     {
-      return FakeDb.Pizzas;
+      return FakeDb.Orders;
     }
-
-
   }
 }
